@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "AvenirRegular";
+  src: url(/sprint-one/assets/Avenir/LAvenirNextLTProRegular.otf);
+}
+@font-face {
+  font-family: "AvenirDemi";
+  src: url(/sprint-one/assets/Avenir/LAvenirNextLTProDemi.otf);
+}
+@font-face {
+  font-family: "AvenirBold";
+  src: url(/sprint-one/assets/Avenir/LAvenirNextLTProBold.otf);
+}
+body {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.bandheader {
+  background-image: url("/sprint-one/assets/Images/Hero 1.jpeg");
+  width: 100%;
+  height: 11.4375rem;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+h1, h2, h3, p, .photogallery__pics, .bandsite-footer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h1 {
+  font-family: "AvenirBold";
+}
+
+h2 {
+  font-family: "AvenirDemi";
+}
+
+h3 {
+  font-family: "AvenirRegular";
+}
+
+p {
+  font-family: "AvenirRegular";
+}
+
+.bandintro {
+  display: flex;
+  flex-direction: column;
+}
+
+.bandintro__image {
+  width: 100%;
+}
+
+.photogallery {
+  background-color: #e1e1e1;
+}
+
+.photogallery__pics {
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.bandsite-footer {
+  background-color: #323232;
+}/*# sourceMappingURL=main.css.map */
