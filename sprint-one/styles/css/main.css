@@ -60,7 +60,7 @@ p {
     margin: 0 auto;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   p {
     font-size: 0.875rem;
     line-height: 1.375rem;
@@ -94,7 +94,7 @@ p {
     padding-left: 2rem;
   }
 }
-@media (min-width: 768px) and (min-width: 1280px) {
+@media (min-width: 768px) and (min-width: 1440px) {
   .navbar__logopic {
     padding-left: 11.25rem;
   }
@@ -155,7 +155,7 @@ p {
     height: 25rem;
   }
 }
-@media (min-width: 768px) and (min-width: 1280px) {
+@media (min-width: 768px) and (min-width: 1440px) {
   .bandheader {
     height: 41.88rem;
   }
@@ -177,7 +177,7 @@ p {
     line-height: 4.25rem;
   }
 }
-@media (min-width: 768px) and (min-width: 1280px) {
+@media (min-width: 768px) and (min-width: 1440px) {
   .bandheader__text {
     width: 35rem;
     padding-left: 11.25rem;
@@ -197,7 +197,7 @@ p {
     width: 45rem;
   }
 }
-@media (min-width: 768px) and (min-width: 1280px) {
+@media (min-width: 768px) and (min-width: 1440px) {
   .bandintro {
     width: 56rem;
   }
@@ -213,7 +213,7 @@ p {
     height: 22.63rem;
   }
 }
-@media (min-width: 768px) and (min-width: 1280px) {
+@media (min-width: 768px) and (min-width: 1440px) {
   .bandintro__image {
     height: 28.13rem;
   }
@@ -225,7 +225,7 @@ p {
     line-height: 2.75rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .bandintro h1 {
     font-size: 2.25rem;
     line-height: 2.75rem;
@@ -242,7 +242,7 @@ p {
     line-height: 2rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .bandintro h2 {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -285,7 +285,7 @@ p {
     padding-left: 11.25rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .photogallery h1 {
     font-size: 2.25rem;
     line-height: 2.75rem;
@@ -325,7 +325,7 @@ p {
     padding-bottom: 1.5rem;
   }
 }
-@media (min-width: 768px) and (min-width: 1280px) {
+@media (min-width: 768px) and (min-width: 1440px) {
   .photogallery__pics {
     width: 21.5rem;
     height: 12.06rem;
@@ -347,7 +347,7 @@ p {
     height: 25rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .bandsite-footer {
     padding-left: 10rem;
   }
