@@ -3,60 +3,372 @@
 @use './variables' as *;
 
 body{
-    margin-left:0%;
-    margin-right:0%;
+    margin:0px;
+    padding:0px;
 }
 
-.bandheader {
-    background-image: url("/sprint-one/assets/Images/Hero\ 1.jpeg");
-    width:100%;
-    height:11.4375rem;
-    background-size: cover;
-    background-position: center center;
-    color:white;
-}
-    
-h1,h2,h3,p,.photogallery__pics,.bandsite-footer{
-    padding-left:1rem;
-    padding-right:1rem;
-}    
-    
 h1 {
-    font-family: 'AvenirBold';
+    @include mobileh1;
+    @include commonpaddings;
 }
 
 h2 {
-    font-family: 'AvenirDemi';
+    @include mobileh2;
+    @include commonpaddings;
 }
 
-h3 {
-    font-family: 'AvenirRegular';
+h4 {
+    @include mobileh4;
+    @include commonpaddings;
 }
 
 p {
-     font-family: 'AvenirRegular';
+     @include mobilep;
+     @include commonpaddings;
+     @include tablet{
+        font-size:0.875rem;
+        line-height:1.375rem;
+        margin:0 auto
+     }
+     @include desktop{
+         font-size:0.875rem;
+         line-height:1.375rem;
+         margin:0 auto;
+     }
 }
 
+.navbar{
+    background-color: $navblack;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    height:5rem;
+    line-height:1rem;
+    @include tablet{
+        flex-direction: row;
+    }
+}
+
+.navbar__logopic{
+    text-align: center;
+    padding-top: 1rem;
+    @include tablet{
+        padding-top:1.8rem;
+        padding-left:2rem;
+        @include desktop{
+            padding-left:11.25rem;
+        }
+    }
+}
+
+.navlist {
+    box-sizing: border-box;
+    display:flex;
+    list-style-type: none;
+    padding-left: 0%;
+    @include verticalcentre;
+
+    & .listitems,.listitems1 {
+        text-align: center;
+        box-sizing: border-box;
+        width:10rem;
+        @include tablet{
+            width:7rem;
+           
+        }
+
+        & .link {
+            font-family: 'AvenirRegular';
+            padding-top:0%;
+            color: $mercury;
+            text-decoration: none;
+            font-size:1rem;
+            @include tablet{
+            }
+        }
+    }
+}
+
+.listitems1 {
+    border-bottom: 0.25rem solid white;
+}
+
+
+.bandheader {
+    position:relative;
+    background-image: url("/sprint-one/assets/Images/Hero\ 1.jpeg");
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    width:100%;
+    height:12rem;
+    margin-top: 0%;
+    background-size: cover;
+    background-position: center center;
+    @include tablet{
+        height:25rem;
+        @include desktop{
+            height:41.88rem;
+        }
+    }
+
+    &__text{
+        width:14rem;
+        margin-top:0%;
+        padding-top: 4rem;
+        padding-left:1rem;
+        color:white;
+        line-height:2rem;
+        @include tablet{
+            width:35rem;
+            padding-left:1.5rem;
+            padding-top:9rem;
+            font-size:3.75rem;
+            line-height:4.25rem;
+            @include desktop{
+                width:35rem;
+                padding-left:11.25rem;
+                padding-top:15rem;
+                font-size:3.75rem;
+                line-height:4.25rem;
+            }
+        }
+    }
+}    
+    
 
 .bandintro {
     display: flex;
     flex-direction: column;
+    @include tablet{
+        margin:auto;
+        width:45rem;
+        @include desktop{
+            width:56rem;
+        }
+    }
+    
+    &__image {
+        box-sizing: border-box;
+        width:100%;
+        @include commonpaddings;
+        @include tablet{
+            height:22.63rem;
+            @include desktop{
+                height:28.13rem;
+            }
+        }
+    }
 }
 
-.bandintro__image {
-    width:100%;
+.bandintro h1{
+    @include tablet{
+        font-size:2.25rem;
+        line-height:2.75rem;
+     }
+     @include desktop{
+         font-size:2.25rem;
+         line-height:2.75rem;
+        }
 }
+
+
+.bandintro h2{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    @include tablet{
+        font-size:1.5rem;
+        line-height:2rem;
+     }
+     @include desktop{
+         font-size:1.5rem;
+         line-height:2rem;
+        }
+}
+
+.bandintro h4{
+    font-size: 1rem;
+}
+
+.bandintro__ptext{
+    box-sizing: border-box;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    @include tablet{
+        flex-direction: row;
+    }
+}
+
+.bandintro p{
+    line-height: 1.25rem; 
+}
+
+
+
+
+
 
 .photogallery {
     background-color: $mercury;
+    & h1{
+        padding-top:2rem;
+        margin-bottom: 1.5rem;
+        @include tablet{
+            font-size:2.25rem;
+            line-height:2.75rem;
+            padding-left:11.25rem;
+         }
+         @include desktop{
+             font-size:2.25rem;
+             line-height:2.75rem;
+             padding-left:11.25rem;
+            }
+    }
 }
 
-.photogallery__pics {
+.photogallery__container {
+    box-sizing: border-box;
     width:100%;
-    padding-bottom: 16px;
+    display:flex;
+    flex-direction: column;
+    @include commonpaddings;
+    @include tablet{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        padding-left:11.25rem;
+        padding-right:11.25rem;
+        flex-wrap: wrap;
+    }
+}
+
+
+.photogallery__pics {
+    margin:0 auto;
+    width:18rem;
+    padding-bottom: 1rem;
+    @include tablet{
+        width:14rem;
+        height:7.875rem;
+        padding-bottom: 1.5rem;
+        @include desktop{
+            width:21.5rem;
+            height:12.06rem;
+            padding-bottom: 1.5rem;
+        }
+    }
 }
 
 
 .bandsite-footer {
     background-color: $navblack;
+    height:50rem;
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    & h1,h2,p {
+            color: white;
+    }
+}
+
+.bandsite-footer__iconcontainer{
+    width: 9rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding:1rem;
+    @include tablet{
+        padding-top:5rem;
+    }
+}
+
+
+
+.bandsite-footer__logopic{
+    display:none;
+    @include tablet{
+        display:flex;
+        width:7.5rem;
+        height:1.5rem;
+        position:absolute;
+        top:5rem;
+        right:9rem;
+    }
+
+}
+
+.bandsite-footer__socialicons {
+    width:1.3rem;
+    height:1.2rem;
+}
+
+
+.bandsite-footer h1{
+    font-size:2.3rem;
+    padding-top:3rem;
+}
+
+.agents {
+    padding-top:1.5rem;
+    & h2{
+        margin:0;
+    }
+}
+
+.address {
+    padding-top:1.5rem;
+    & p{
+        margin:0;
+    }
+}
+
+.emails {
+    padding-top:1.5rem;
+    & p{
+        margin:0;
+    }
+}
+
+
+.bandsite-footer__topcontainer{
+    display:flex;
+    flex-direction: column;
+    @include tablet{
+        flex-direction:row;
+    }
+}
+
+.bandsite-footer__middlecontainers{
+    display:flex;
+    flex-direction: column;
+    @include tablet{
+        padding-left:1.5rem;
+        flex-direction: row;
+    }
+}
+
+.copyright{
+    margin:0 0;
+    padding-top:1rem;
+    display: flex;
+    flex-direction: column;
+    padding-left:1rem;
+    @include tablet{
+        flex-direction: row;
+        justify-content: left;
+        margin-left:0%;
+        margin-right:0%;
+        padding-left:1.5rem;
+    }
+
+    & p{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left:0%;
+        padding-right:0%;
+    }
 }
