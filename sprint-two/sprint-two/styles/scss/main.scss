@@ -1,0 +1,300 @@
+/*-----------This sections shows the imports from the sub-scss files---------------*/
+@use './typography' as *;
+@use './mixins' as *;
+@use './variables' as *;
+/*-----------This is the end of the imports---------------*/
+
+
+/*-----------This is the beginning of the header styling---------------*/
+
+.bandheader {
+    position:relative;
+    background-image: url("/assets/Images/Hero1.jpeg");
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    width:100%;
+    height:12rem;
+    margin-top: 0%;
+    background-size: cover;
+    background-position: center center;
+    @include tablet{
+        height:25rem;
+        @include desktop{
+            height:41.88rem;
+        }
+    }
+
+    &__text{
+        width:14rem;
+        margin-top:0%;
+        padding-top: 4rem;
+        padding-left:1rem;
+        color:white;
+        line-height:2rem;
+        @include tablet{
+            width:35rem;
+            padding-left:1.5rem;
+            padding-top:9rem;
+            font-size:3.75rem;
+            line-height:4.25rem;
+            @include desktop{
+                width:35rem;
+                padding-left:11.25rem;
+                padding-top:15rem;
+                font-size:3.75rem;
+                line-height:4.25rem;
+            }
+        }
+    }
+}    
+
+    
+.bandintro {
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+        margin:auto;
+        width:45rem;
+        @include desktop{
+            width:56rem;
+        }
+    }
+    
+    &__image {
+        box-sizing: border-box;
+        width:100%;
+        @include commonpaddings;
+        @include tablet{
+            height:22.63rem;
+            @include desktop{
+                height:28.13rem;
+            }
+        }
+    }
+}
+
+.bandintro h1{
+    @include tablet{
+        font-size:2.25rem;
+        line-height:2.75rem;
+     }
+     @include desktop{
+         font-size:2.25rem;
+         line-height:2.75rem;
+        }
+}
+
+.bandintro h2{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    @include tablet{
+        font-size:1.5rem;
+        line-height:2rem;
+     }
+     @include desktop{
+         font-size:1.5rem;
+         line-height:2rem;
+        }
+}
+
+.bandintro h4{
+    font-size: 1rem;
+}
+
+.bandintro__ptext{
+    box-sizing: border-box;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    @include tablet{
+        flex-direction: row;
+    }
+}
+
+.bandintro p{
+    line-height: 1.25rem; 
+}
+
+/*-----------This is the end of the header styling---------------*/
+
+/*-----------This is the beginning of the photogallery styling---------------*/
+
+.photogallery {
+    background-color: $mercury;
+    & h1{
+        padding-top:2rem;
+        margin-bottom: 1.5rem;
+        @include tablet{
+            font-size:2.25rem;
+            line-height:2.75rem;
+            padding-left:11.25rem;
+         }
+         @include desktop{
+             font-size:2.25rem;
+             line-height:2.75rem;
+             padding-left:11.25rem;
+            }
+    }
+}
+
+.photogallery__container {
+    box-sizing: border-box;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    @include commonpaddings;
+    @include tablet{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        padding-left:11.25rem;
+        padding-right:11.25rem;
+        flex-wrap: wrap;
+    }
+}
+
+.photogallery__pics {
+    margin:0 auto;
+    width:18rem;
+    padding-bottom: 1rem;
+    @include tablet{
+        width:14rem;
+        height:7.875rem;
+        padding-bottom: 1.5rem;
+        @include desktop{
+            width:21.5rem;
+            height:12.06rem;
+            padding-bottom: 1.5rem;
+        }
+    }
+}
+
+
+.comments-section{
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    &__heading{
+        padding-top:1rem;
+        font-family:'AvenirBold';
+        font-size: 1.5rem;
+        padding-left:1rem;
+        @include tablet{
+            font-size:2rem;
+            line-height: 2.75rem;
+            padding-left: 11.25rem;
+        }
+    }
+    
+    &__buttons{
+        height:3rem;
+        width:14rem;
+        background-color:black;
+        color:$mercury;
+        font-family:'AvenirDemi';
+        font-size: 1rem;
+        border-radius:10px;
+        @include tablet{
+            margin-left:14.5rem;
+        }
+    } 
+
+    &__subcontainer1{
+        width:18rem;
+        display: flex;
+        flex-direction: row;
+        margin:0 auto;
+        justify-content: space-around;
+        border-bottom: 1px solid $silver;
+        padding-bottom: 2rem;
+        @include tablet{
+            width:33rem;
+        }
+    }
+    &__subcontainer2{
+        width:18rem;
+        margin:0 auto;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 1px solid $silver;
+        @include tablet{
+            width:33rem;
+        }
+    }
+
+    &__namecomment-container{
+        display: flex;
+        flex-direction: column;
+        padding-left:2rem;
+        @include tablet{
+            width:28.75rem;
+        }
+    }
+
+    &__namedatetext-container{
+        width:14rem;
+        display:flex;
+        flex-direction: column;
+        @include tablet{
+            width:28.75rem;
+        }
+    }
+
+    &__labels{
+        font-family: 'AvenirDemi';
+        font-size: 0.75rem;
+        color:$silver;
+        padding-bottom:0.5rem;
+    }
+
+    &__input-name{
+        height:3rem;
+        margin-bottom: 1rem;
+        border-radius:5px;
+        @include tablet{
+            width:28.75rem;
+        }
+    }
+
+    &__input-comment{
+        height:5rem;
+        margin-bottom: 1rem;
+        border-radius:5px;
+    }
+
+    &__namedate-container{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    &__profilepics{
+        margin-top:2rem;
+        width:3rem;
+        height:3rem;
+        border-radius: 100px;
+    }
+    &__names{
+        font-family: 'AvenirDemi';
+        padding-left:0%;
+        padding-right:0%;
+    }
+    &__dates{
+        padding-left:0%;
+        padding-right:0%;
+    }
+    &__comment-text{
+        padding-left:0%;
+        padding-right:0%;
+        margin-bottom:1.5rem;
+    }
+}
+
+
+
+
+/*-----------This is the end of the photogallery styling---------------*/
+
+/*-----------This is the end of the body styling---------------*/

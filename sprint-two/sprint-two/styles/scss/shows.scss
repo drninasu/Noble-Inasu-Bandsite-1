@@ -1,0 +1,173 @@
+/*-----------This sections shows the imports from the sub-scss files---------------*/
+@use './typography' as *;
+@use './mixins' as *;
+@use './variables' as *;
+/*-----------This is the end of the imports---------------*/
+
+
+/*-----------This is the beginning of the header styling---------------*/
+
+.listitems1 {
+    border-bottom: none;
+}
+
+
+.listitems {
+    border-bottom: 0.25rem solid white;
+    padding-bottom: 0.4rem;
+    @include tablet{
+        margin-left: 2rem;
+        padding-top:1.8rem;
+        padding-bottom:1.8rem;
+    }
+}
+
+
+.bandheader {
+    position:relative;
+    background-image: url("/assets/Images/Hero3.jpeg");
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:29.5rem;
+    margin-top: 0%;
+    background-size: cover;
+    background-position: center center;
+    @include tablet{
+        height:35rem;
+        @include desktop{
+            height:41.88rem;
+        }
+    }
+
+    &__textsmall{
+        width:14rem;
+        margin-top:0%;
+        padding-top: 2rem;
+        padding-left:1rem;
+        color:white;
+        line-height:2rem;
+        @include tablet{
+            width:35rem;
+            padding-left:1.5rem;
+            padding-top:4rem;
+            font-size:2rem;
+            line-height:4.25rem;
+            @include desktop{
+                width:35rem;
+                padding-left:11.25rem;
+                padding-top:8rem;
+                font-size:2rem;
+                line-height:4.25rem;
+            }
+        }
+    }
+
+    &__textbig{
+        font-size:2rem;
+        width:16rem;
+        margin-top:0%;
+        padding-left:1rem;
+        padding-bottom:2rem;
+        color:white;
+        line-height:3rem;
+        @include tablet{
+            width:35rem;
+            padding-left:1.5rem;
+            font-size:3.75rem;
+            line-height:4.25rem;
+            @include desktop{
+                width:35rem;
+                padding-left:11.25rem;
+                font-size:3.75rem;
+                line-height:4.25rem;
+            }
+        }
+    }
+}    
+   
+
+.bandheader iframe{
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 18rem;
+    height: 7rem;
+    margin-left:1rem;
+    @include tablet{
+        width:27.25rem;
+        height:9.125rem;
+        position:absolute;
+        top:400px;
+        @include desktop{
+            top:16.88rem;
+            right:10rem;
+        }
+    }
+}
+
+
+.shows-section{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    &__heading{
+        padding-top:1rem;
+        font-family:'AvenirBold';
+        font-size: 1.5rem;
+        padding-left:2rem;
+    }
+
+    &__subcontainer{
+        margin:0 auto;
+        margin-bottom: 1rem;
+        height:17rem;
+        width:18rem;
+        padding-bottom:2rem;
+        border-bottom: 2px solid $silver;
+    }
+
+    &__subheads{
+        font-family: 'AvenirDemi';
+        color:$silver;
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+
+    &__subheads1{
+        font-family: 'AvenirDemi';
+        color:$silver;
+        font-size: 0.9rem;
+        font-weight: 300; 
+    }
+
+
+
+    &__dates{
+        font-family: 'AvenirDemi';
+        font-size:1rem;
+    }
+    &__buttons{
+        height:3rem;
+        width:18rem;
+        background-color:black;
+        color:$mercury;
+        font-family:'AvenirDemi';
+        font-size: 1rem;
+        border-radius:10px;
+        margin-top:1.5rem;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+/*-----------This is the end of the header styling---------------*/

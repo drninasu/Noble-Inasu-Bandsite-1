@@ -1,0 +1,236 @@
+/*-----------This sections shows the imports from the sub-scss files---------------*/
+@use './typography' as *;
+@use './mixins' as *;
+@use './variables' as *;
+/*-----------This is the end of the imports---------------*/
+
+/*-----------This is the beginning of the general styling properties ---------------*/
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+h1 {
+    @include mobileh1;
+    @include commonpaddings;
+}
+
+h2 {
+    @include mobileh2;
+    @include commonpaddings;
+}
+
+h4 {
+    @include mobileh4;
+    @include commonpaddings;
+}
+
+h3 {
+    @include mobileh4;
+    @include commonpaddings;
+}
+
+
+p {
+     @include mobilep;
+     @include commonpaddings;
+     @include tablet{
+        font-size:0.875rem;
+        line-height:1.375rem;
+        margin:0 auto
+     }
+     @include desktop{
+         font-size:0.875rem;
+         line-height:1.375rem;
+         margin:0 auto;
+     }
+}
+/*-----------This is the end of the general styling properties ---------------*/
+
+/*-----------This is the beginning of the navbar styling---------------*/
+
+.navbar{
+    background-color: $navblack;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    height:5rem;
+    line-height:1rem;
+    @include tablet{
+        flex-direction: row;
+    }
+}
+
+.navbar__logopic{
+    text-align: center;
+    padding-top: 1rem;
+    @include tablet{
+        padding-top:1.8rem;
+        padding-left:2rem;
+        @include desktop{
+            padding-left:11.25rem;
+        }
+    }
+}
+
+.navlist {
+    box-sizing: border-box;
+    display:flex;
+    list-style-type: none;
+    padding-left: 0%;
+    @include verticalcentre;
+
+    & .listitems,.listitems1 {
+        text-align: center;
+        box-sizing: border-box;
+        width:10rem;
+        @include tablet{
+            width:7rem;
+           
+        }
+
+        & .link {
+            box-sizing: border-box;
+            font-family: 'AvenirRegular';
+            padding-top:0%;
+            color: $mercury;
+            text-decoration: none;
+            font-size:1rem;
+            @include tablet{
+            }
+        }
+    }
+}
+
+.listitems1 {
+    border-bottom: 0.25rem solid white;
+    padding-bottom: 0.4rem;
+    @include tablet{
+        margin-left: 2rem;
+        padding-top:1.8rem;
+        padding-bottom:1.8rem;
+    }
+}
+
+/*-----------This is the end of the navbar styling---------------*/
+
+/*-----------This is the beginning of the footer styling---------------*/
+
+.bandsite-footer {
+    background-color: $navblack;
+    height:50rem;
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    @include tablet{
+        height:25rem;
+    }
+    @include desktop{
+        padding-left:10rem;
+    }
+    & h1,h2,p {
+            color: white;
+            
+    }
+}
+
+.bandsite-footer__iconcontainer{
+    width: 9rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding:1rem;
+    @include tablet{
+        padding-top:5rem;
+    }
+}
+
+.bandsite-footer__logopic{
+    display:none;
+    @include tablet{
+        display:flex;
+        width:7.5rem;
+        height:1rem;
+        position:absolute;
+        top:5rem;
+        right:9rem;
+    }
+
+}
+
+.bandsite-footer__socialicons {
+    width:1rem;
+    height:1.1rem;
+}
+
+.bandsite-footer h1{
+    font-size:2.3rem;
+    padding-top:3rem;
+}
+
+.agents {
+    padding-top:1.5rem;
+    & h2{
+        margin:0;
+    }
+}
+
+.address {
+    padding-top:1.5rem;
+    & p{
+        margin:0;
+    }
+}
+
+.emails {
+    padding-top:1.5rem;
+    & p{
+        margin:0;
+    }
+}
+
+.bandsite-footer__topcontainer{
+    display:flex;
+    flex-direction: column;
+    @include tablet{
+        flex-direction:row;
+    }
+}
+
+.bandsite-footer__middlecontainers{
+    display:flex;
+    flex-direction: column;
+    @include tablet{
+        flex-direction: row;
+    }
+}
+
+.copyright{
+    margin:0 0;
+    padding-top:1rem;
+    display: flex;
+    flex-direction: column;
+    padding-left:1rem;
+    @include tablet{
+        flex-direction: row;
+        justify-content: left;
+        margin-left:0%;
+        margin-right:0%;
+        padding-left:1.5rem;
+    }
+
+    & p{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left:0%;
+        padding-right:0%;
+    }
+}
+
+/*-----------This is the end of the footer styling---------------*/
+
+/*-----------This is the end of the body styling---------------*/

@@ -1,0 +1,338 @@
+@font-face {
+  font-family: "AvenirRegular";
+  src: url(/assets/Avenir/LAvenirNextLTProRegular.otf);
+}
+@font-face {
+  font-family: "AvenirDemi";
+  src: url(/assets/Avenir/LAvenirNextLTProDemi.otf);
+}
+@font-face {
+  font-family: "AvenirBold";
+  src: url(/assets/Avenir/LAvenirNextLTProBold.otf);
+}
+/*-----------This sections shows the imports from the sub-scss files---------------*/
+/*-----------This is the end of the imports---------------*/
+/*-----------This is the beginning of the header styling---------------*/
+.bandheader {
+  position: relative;
+  background-image: url("/assets/Images/Hero1.jpeg");
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 12rem;
+  margin-top: 0%;
+  background-size: cover;
+  background-position: center center;
+}
+@media (min-width: 768px) {
+  .bandheader {
+    height: 25rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1280px) {
+  .bandheader {
+    height: 41.88rem;
+  }
+}
+.bandheader__text {
+  width: 14rem;
+  margin-top: 0%;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  color: white;
+  line-height: 2rem;
+}
+@media (min-width: 768px) {
+  .bandheader__text {
+    width: 35rem;
+    padding-left: 1.5rem;
+    padding-top: 9rem;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1280px) {
+  .bandheader__text {
+    width: 35rem;
+    padding-left: 11.25rem;
+    padding-top: 15rem;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+}
+
+.bandintro {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .bandintro {
+    margin: auto;
+    width: 45rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1280px) {
+  .bandintro {
+    width: 56rem;
+  }
+}
+.bandintro__image {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .bandintro__image {
+    height: 22.63rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1280px) {
+  .bandintro__image {
+    height: 28.13rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bandintro h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+@media (min-width: 1280px) {
+  .bandintro h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+.bandintro h2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 768px) {
+  .bandintro h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .bandintro h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.bandintro h4 {
+  font-size: 1rem;
+}
+
+.bandintro__ptext {
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .bandintro__ptext {
+    flex-direction: row;
+  }
+}
+
+.bandintro p {
+  line-height: 1.25rem;
+}
+
+/*-----------This is the end of the header styling---------------*/
+/*-----------This is the beginning of the photogallery styling---------------*/
+.photogallery {
+  background-color: #e1e1e1;
+}
+.photogallery h1 {
+  padding-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .photogallery h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-left: 11.25rem;
+  }
+}
+@media (min-width: 1280px) {
+  .photogallery h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-left: 11.25rem;
+  }
+}
+
+.photogallery__container {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .photogallery__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 11.25rem;
+    padding-right: 11.25rem;
+    flex-wrap: wrap;
+  }
+}
+
+.photogallery__pics {
+  margin: 0 auto;
+  width: 18rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .photogallery__pics {
+    width: 14rem;
+    height: 7.875rem;
+    padding-bottom: 1.5rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1280px) {
+  .photogallery__pics {
+    width: 21.5rem;
+    height: 12.06rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.comments-section {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+.comments-section__heading {
+  padding-top: 1rem;
+  font-family: "AvenirBold";
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+@media (min-width: 768px) {
+  .comments-section__heading {
+    font-size: 2rem;
+    line-height: 2.75rem;
+    padding-left: 11.25rem;
+  }
+}
+.comments-section__buttons {
+  height: 3rem;
+  width: 14rem;
+  background-color: black;
+  color: #e1e1e1;
+  font-family: "AvenirDemi";
+  font-size: 1rem;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .comments-section__buttons {
+    margin-left: 14.5rem;
+  }
+}
+.comments-section__subcontainer1 {
+  width: 18rem;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-around;
+  border-bottom: 1px solid #AFAFAF;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .comments-section__subcontainer1 {
+    width: 33rem;
+  }
+}
+.comments-section__subcontainer2 {
+  width: 18rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #AFAFAF;
+}
+@media (min-width: 768px) {
+  .comments-section__subcontainer2 {
+    width: 33rem;
+  }
+}
+.comments-section__namecomment-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+@media (min-width: 768px) {
+  .comments-section__namecomment-container {
+    width: 28.75rem;
+  }
+}
+.comments-section__namedatetext-container {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .comments-section__namedatetext-container {
+    width: 28.75rem;
+  }
+}
+.comments-section__labels {
+  font-family: "AvenirDemi";
+  font-size: 0.75rem;
+  color: #AFAFAF;
+  padding-bottom: 0.5rem;
+}
+.comments-section__input-name {
+  height: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .comments-section__input-name {
+    width: 28.75rem;
+  }
+}
+.comments-section__input-comment {
+  height: 5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+.comments-section__namedate-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.comments-section__profilepics {
+  margin-top: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+}
+.comments-section__names {
+  font-family: "AvenirDemi";
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.comments-section__dates {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.comments-section__comment-text {
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-bottom: 1.5rem;
+}
+
+/*-----------This is the end of the photogallery styling---------------*/
+/*-----------This is the end of the body styling---------------*//*# sourceMappingURL=main.css.map */

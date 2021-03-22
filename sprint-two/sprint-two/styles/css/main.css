@@ -1,0 +1,464 @@
+@font-face {
+  font-family: "AvenirRegular";
+  src: url(/sprint-one/assets/Avenir/LAvenirNextLTProRegular.otf);
+}
+@font-face {
+  font-family: "AvenirDemi";
+  src: url(/sprint-one/assets/Avenir/LAvenirNextLTProDemi.otf);
+}
+@font-face {
+  font-family: "AvenirBold";
+  src: url(/sprint-one/assets/Avenir/LAvenirNextLTProBold.otf);
+}
+/*-----------This sections shows the imports from the sub-scss files---------------*/
+/*-----------This is the end of the imports---------------*/
+/*-----------This is the beginning of the general styling properties ---------------*/
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-family: "AvenirBold";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h2 {
+  font-family: "AvenirDemi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  padding: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h4 {
+  font-family: "AvenirRegular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  padding: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+p {
+  font-family: "AvenirRegular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  padding: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  p {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    margin: 0 auto;
+  }
+}
+
+/*-----------This is the end of the general styling properties ---------------*/
+/*-----------This is the beginning of the navbar styling---------------*/
+.navbar {
+  background-color: #323232;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  line-height: 1rem;
+}
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+}
+
+.navbar__logopic {
+  text-align: center;
+  padding-top: 1rem;
+}
+@media (min-width: 768px) {
+  .navbar__logopic {
+    padding-top: 1.8rem;
+    padding-left: 2rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  .navbar__logopic {
+    padding-left: 11.25rem;
+  }
+}
+
+.navlist {
+  box-sizing: border-box;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0%;
+  justify-content: center;
+  align-items: center;
+}
+.navlist .listitems, .navlist .listitems1 {
+  text-align: center;
+  box-sizing: border-box;
+  width: 10rem;
+}
+@media (min-width: 768px) {
+  .navlist .listitems, .navlist .listitems1 {
+    width: 7rem;
+  }
+}
+.navlist .listitems .link, .navlist .listitems1 .link {
+  font-family: "AvenirRegular";
+  padding-top: 0%;
+  color: #e1e1e1;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.listitems1 {
+  border-bottom: 0.25rem solid white;
+  padding-bottom: 0.4rem;
+}
+@media (min-width: 768px) {
+  .listitems1 {
+    margin-left: 2rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+  }
+}
+
+/*-----------This is the end of the navbar styling---------------*/
+/*-----------This is the beginning of the header styling---------------*/
+.bandheader {
+  position: relative;
+  background-image: url("/sprint-one/assets/Images/Hero 1.jpeg");
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 12rem;
+  margin-top: 0%;
+  background-size: cover;
+  background-position: center center;
+}
+@media (min-width: 768px) {
+  .bandheader {
+    height: 25rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  .bandheader {
+    height: 41.88rem;
+  }
+}
+.bandheader__text {
+  width: 14rem;
+  margin-top: 0%;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  color: white;
+  line-height: 2rem;
+}
+@media (min-width: 768px) {
+  .bandheader__text {
+    width: 35rem;
+    padding-left: 1.5rem;
+    padding-top: 9rem;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  .bandheader__text {
+    width: 35rem;
+    padding-left: 11.25rem;
+    padding-top: 15rem;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+}
+
+.bandintro {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .bandintro {
+    margin: auto;
+    width: 45rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  .bandintro {
+    width: 56rem;
+  }
+}
+.bandintro__image {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .bandintro__image {
+    height: 22.63rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  .bandintro__image {
+    height: 28.13rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bandintro h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+@media (min-width: 1440px) {
+  .bandintro h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+.bandintro h2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 768px) {
+  .bandintro h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .bandintro h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.bandintro h4 {
+  font-size: 1rem;
+}
+
+.bandintro__ptext {
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .bandintro__ptext {
+    flex-direction: row;
+  }
+}
+
+.bandintro p {
+  line-height: 1.25rem;
+}
+
+/*-----------This is the end of the header styling---------------*/
+/*-----------This is the beginning of the photogallery styling---------------*/
+.photogallery {
+  background-color: #e1e1e1;
+}
+.photogallery h1 {
+  padding-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .photogallery h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-left: 11.25rem;
+  }
+}
+@media (min-width: 1440px) {
+  .photogallery h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-left: 11.25rem;
+  }
+}
+
+.photogallery__container {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .photogallery__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 11.25rem;
+    padding-right: 11.25rem;
+    flex-wrap: wrap;
+  }
+}
+
+.photogallery__pics {
+  margin: 0 auto;
+  width: 18rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .photogallery__pics {
+    width: 14rem;
+    height: 7.875rem;
+    padding-bottom: 1.5rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  .photogallery__pics {
+    width: 21.5rem;
+    height: 12.06rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+/*-----------This is the end of the photogallery styling---------------*/
+/*-----------This is the beginning of the footer styling---------------*/
+.bandsite-footer {
+  background-color: #323232;
+  height: 50rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .bandsite-footer {
+    height: 25rem;
+  }
+}
+@media (min-width: 1440px) {
+  .bandsite-footer {
+    padding-left: 10rem;
+  }
+}
+.bandsite-footer h1, .bandsite-footer h2, .bandsite-footer p {
+  color: white;
+}
+
+.bandsite-footer__iconcontainer {
+  width: 9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .bandsite-footer__iconcontainer {
+    padding-top: 5rem;
+  }
+}
+
+.bandsite-footer__logopic {
+  display: none;
+}
+@media (min-width: 768px) {
+  .bandsite-footer__logopic {
+    display: flex;
+    width: 7.5rem;
+    height: 1rem;
+    position: absolute;
+    top: 5rem;
+    right: 9rem;
+  }
+}
+
+.bandsite-footer__socialicons {
+  width: 1rem;
+  height: 1.1rem;
+}
+
+.bandsite-footer h1 {
+  font-size: 2.3rem;
+  padding-top: 3rem;
+}
+
+.agents {
+  padding-top: 1.5rem;
+}
+.agents h2 {
+  margin: 0;
+}
+
+.address {
+  padding-top: 1.5rem;
+}
+.address p {
+  margin: 0;
+}
+
+.emails {
+  padding-top: 1.5rem;
+}
+.emails p {
+  margin: 0;
+}
+
+.bandsite-footer__topcontainer {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .bandsite-footer__topcontainer {
+    flex-direction: row;
+  }
+}
+
+.bandsite-footer__middlecontainers {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .bandsite-footer__middlecontainers {
+    flex-direction: row;
+  }
+}
+
+.copyright {
+  margin: 0 0;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+@media (min-width: 768px) {
+  .copyright {
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 1.5rem;
+  }
+}
+.copyright p {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+/*-----------This is the end of the footer styling---------------*/
+/*-----------This is the end of the body styling---------------*//*# sourceMappingURL=main.css.map */
